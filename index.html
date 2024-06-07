@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Peli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASETA KUVAT OIKEAAN JÄRJESTYKSEEN</h1>
+        <div id="target" class="drop-zone">
+            <div class="drop-box" data-index="1">
+                <div class="audio-icon" data-audio="aani1.mp3">&#x1F50A;</div>
+                <img src="kuva1.PNG" alt="Kuva 1" class="initial-image">
+            </div>
+            <div class="drop-box" data-index="2"></div>
+            <div class="drop-box" data-index="3"></div>
+            <div class="drop-box" data-index="4"></div>
+            <div class="drop-box" data-index="5"></div>
+            <div class="drop-box" data-index="6"></div>
+        </div>
+        <div id="source" class="image-zone">
+            <img src="kuva2.PNG" alt="Kuva 2" class="draggable" draggable="true" data-audio="aani2.mp3" data-index="2">
+            <img src="kuva3.PNG" alt="Kuva 3" class="draggable" draggable="true" data-audio="aani3.mp3" data-index="3">
+            <img src="kuva4.PNG" alt="Kuva 4" class="draggable" draggable="true" data-audio="aani4.mp3" data-index="4">
+            <img src="kuva5.PNG" alt="Kuva 5" class="draggable" draggable="true" data-audio="aani5.mp3" data-index="5">
+            <img src="kuva6.PNG" alt="Kuva 6" class="draggable" draggable="true" data-audio="aani6.mp3" data-index="6">
+        </div>
+        <div id="result-container" class="hidden">
+            <p>HIENOA!</p>
+            <div class="stars">
+                &#x2B50; &#x2B50; &#x2B50;
+            </div>
+            <button id="playAgain">Pelaa uudelleen</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
