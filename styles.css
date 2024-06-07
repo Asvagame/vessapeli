@@ -48,7 +48,7 @@ h1 {
     cursor: pointer;
     font-size: 30px;
     position: absolute;
-    top: 100px; /* Siirrä äänimerkki ylöspäin */
+    top: -40px; /* Siirrä äänimerkki ylöspäin */
     left: 50%; /* Keskelle vaakasuunnassa */
     transform: translateX(-50%); /* Keskelle vaakasuunnassa */
 }
